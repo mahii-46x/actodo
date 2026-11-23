@@ -47,6 +47,7 @@ function Signup(props) {
                 <input
                     type="text"
                     placeholder="Username"
+                    className="m-1 border-black border rounded-md"
                     value={username}
                     onChange={(evt) => setUsername(evt.target.value)}
                 />
@@ -56,6 +57,7 @@ function Signup(props) {
                 <input
                     type="password"
                     placeholder="Password"
+                     className="m-1 border-black border rounded-md"
                     value={password}
                     onChange={(evt) => setPassword(evt.target.value)}
                 />
@@ -65,19 +67,20 @@ function Signup(props) {
                 <input
                     type="password"
                     placeholder="Confirm Password"
+                     className="m-1 border-black border rounded-md"
                     value={confirmPassword}
                     onChange={(evt) => setConfirmPassword(evt.target.value)}
                 />
 
                 <br />
 
-                <button onClick={handleSignup}>
+                <button onClick={handleSignup}  className="bg-orange-400 p-1.5 border rounded-md m-1 w-24">
                     Signup
                 </button>
 
                 <p>
                     Already have an Account?
-                    <Link to="/"> Login</Link>
+                    <Link to="/" className="underline"> Login</Link>
                 </p>
 
             </div>
