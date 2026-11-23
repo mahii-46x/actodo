@@ -6,7 +6,7 @@ const setactivityArr = props.setactivityArr
 function handleDelete(deleteid)
 {
     var temparr = activityArr.filter(function(item){
-        if(item.id == deleteid)
+        if(item.id === deleteid)
         {
             return false
         }
